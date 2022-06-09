@@ -1,0 +1,20 @@
+mat-form-field{
+  width: 100%;
+}
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+}
+
+.App-header {
+  text-shadow: 2px 2px rgb(255, 181, 22);
+  font-size: 30px;
+  font-family: serif;
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  font-style: italic;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+  margin: 24px auto;
+  font-weight: 200;
+}

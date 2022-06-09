@@ -1,0 +1,27 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .App-header {
+    text-shadow: 2px 2px rgb(255, 181, 22);
+    font-size: 40px;
+    font-family: serif;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    margin: 24px auto;
+    font-weight: 200;
+  }

@@ -1,0 +1,3 @@
+[submodule "Node-MySql-API"]
+	path = Node-MySql-API
+	url = https://github.com/mrnvm8/Angular-CRUD.git

@@ -1,0 +1,32 @@
+<h1 mat-dialog-title class="App-header">{{ FormTile }}</h1>
+<div mat-dialog-content>
+  <!--Binding the form to StudentForm of type formgroup--->
+  <form [formGroup]="studentForm">
+    <mat-form-field appearance="outline">
+      <mat-label>FirstName</mat-label>
+      <input formControlName="FirstName" matInput placeholder="FirstName">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>LastName</mat-label>
+      <input formControlName="LastName" matInput placeholder="LastName">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Gender</mat-label>
+      <mat-select formControlName="Gender">
+        <mat-option value="Male">Male</mat-option>
+        <mat-option value="Female">Female</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <label><h3>Grade</h3></label>
+    <mat-radio-group formControlName="Grade" aria-label="Select an option">
+      <mat-radio-button *ngFor="let grade of grades" [value] = grade>
+        {{ grade }}
+      </mat-radio-button>
+    </mat-radio-group>
+  </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+  <!--having an action button-->
+  <button mat-raised-button color="primary" (click)="AddStudent()">{{actionBtn}}</button>
+  <button mat-raised-button color="warn" mat-dialog-close>Cancel</button>
+</div>
